@@ -23,7 +23,7 @@ function WorldMapMapbox(props: WorldMapMapboxProps) {
     doubleClickZoom: false
   }
 
-  console.log(mapboxAccessToken)
+  console.log(import.meta.env.PROD)
 
   const markers = useMemo(
     () =>
