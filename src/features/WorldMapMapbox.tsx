@@ -23,6 +23,8 @@ function WorldMapMapbox(props: WorldMapMapboxProps) {
     doubleClickZoom: false
   }
 
+  console.log(mapboxAccessToken)
+
   const markers = useMemo(
     () =>
       props.entities?.map((e) => (
