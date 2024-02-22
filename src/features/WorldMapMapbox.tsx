@@ -23,8 +23,6 @@ function WorldMapMapbox(props: WorldMapMapboxProps) {
     doubleClickZoom: false
   }
 
-  console.log(import.meta.env.PROD)
-
   const markers = useMemo(
     () =>
       props.entities?.map((e) => (
