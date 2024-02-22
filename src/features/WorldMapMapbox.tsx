@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import Map, { Marker } from 'react-map-gl'
 import { EntityFromMessage } from '../types'
 
@@ -13,7 +13,7 @@ type WorldMapMapboxProps = {
 }
 
 function WorldMapMapbox(props: WorldMapMapboxProps) {
-  const [settings, setSettings] = useState({
+  const settings = {
     dragPan: false,
     dragRotate: false,
     scrollZoom: false,
@@ -21,7 +21,7 @@ function WorldMapMapbox(props: WorldMapMapboxProps) {
     touchRotate: false,
     keyboard: false,
     doubleClickZoom: false
-  })
+  }
 
   const markers = useMemo(
     () =>
