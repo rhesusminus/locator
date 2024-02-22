@@ -27,6 +27,7 @@ function Locator() {
         .map((e) => ({
           ...e,
           distance: distance(
+            // @ts-expect-error I don't know
             [userLocation.lat, userLocation.lng],
             [e.lat, e.long]
           )
